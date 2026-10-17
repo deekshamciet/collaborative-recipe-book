@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe - Collaborative Recipe Book</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>🍳 Recipe Book</h1>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="add-recipe.html">Add Recipe</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="add-recipe-section">
+
+            <h2>➕ Add Your Recipe</h2>
+
+            <form id="recipeForm">
+
+                <label for="recipeName">Recipe Name</label>
+                <input
+                    type="text"
+                    id="recipeName"
+                    placeholder="Enter recipe name"
+                    required
+                >
+
+                <label for="category">Category</label>
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Fast Food">Fast Food</option>
+                    <option value="Healthy">Healthy</option>
+                </select>
+
+                <label for="ingredients">Ingredients</label>
+                <textarea
+                    id="ingredients"
+                    placeholder="Enter ingredients"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <label for="instructions">Preparation Steps</label>
+                <textarea
+                    id="instructions"
+                    placeholder="Enter preparation steps"
+                    rows="6"
+                    required
+                ></textarea>
+
+                <label for="image">Recipe Image URL</label>
+                <input
+                    type="text"
+                    id="image"
+                    placeholder="Enter image URL (optional)"
+                >
+
+                <button type="submit">
+                    Add Recipe
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Collaborative Recipe Book</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

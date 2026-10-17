@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Collaborative Recipe Book</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>🍳 Recipe Book</h1>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="add-recipe.html">Add Recipe</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="recipe-section">
+
+            <h2>🍽️ Our Recipes</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search recipes..."
+                onkeyup="searchRecipes()"
+            >
+
+            <div class="recipe-grid" id="recipeContainer">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Collaborative Recipe Book</p>
+    </footer>
+
+    <script src="js/recipes.js"></script>
+
+</body>
+</html>
